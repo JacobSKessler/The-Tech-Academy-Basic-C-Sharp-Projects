@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "step94", "step94\step94.csproj", "{87B31DDB-56B3-4E55-9638-1EF8B1396767}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87B31DDB-56B3-4E55-9638-1EF8B1396767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B31DDB-56B3-4E55-9638-1EF8B1396767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B31DDB-56B3-4E55-9638-1EF8B1396767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B31DDB-56B3-4E55-9638-1EF8B1396767}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67A40367-5551-4CB5-ADCB-DB3C37EF23E1}
+	EndGlobalSection
+EndGlobal
