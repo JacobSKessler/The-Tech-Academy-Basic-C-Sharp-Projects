@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace step120
 {
-    class Employee
+    class Employee : Person
     {
+        public int id;
     }
 }
