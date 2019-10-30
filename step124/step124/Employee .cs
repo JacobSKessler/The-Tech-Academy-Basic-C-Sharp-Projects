@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace step124
 {
-    class Employee
+    class Employee : Person
     {
-        public void SayName()
+        public void SayName2()
         {
-            Person.SayName();
+            SayName();
         }
     }
 }

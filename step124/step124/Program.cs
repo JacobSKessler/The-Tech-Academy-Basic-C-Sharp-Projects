@@ -10,8 +10,8 @@ namespace step124
     {
         static void Main(string[] args)
         {
-            Employee example = new Employee { FirstName = "Sample", LastName = "Student", id = 0001 };
-            example.SayName();
+            Employee example = new Employee { FirstName = "Sample", LastName = "Student" };
+            example.SayName2();
             Console.ReadLine();
         }
     }
