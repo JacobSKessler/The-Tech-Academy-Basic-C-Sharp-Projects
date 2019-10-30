@@ -10,6 +10,10 @@ namespace step124
     {
         static void Main(string[] args)
         {
+            IQuittable quittable = new Employee();
+
+            quittable.Quit();
+
             Employee example = new Employee { FirstName = "Sample", LastName = "Student" };
             example.SayName2();
             Console.ReadLine();

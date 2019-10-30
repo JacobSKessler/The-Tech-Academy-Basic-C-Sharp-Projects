@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace step124
 {
-    class Employee : Person
+    class Employee : Person, IQuittable
     {
         public void SayName2()
         {
             SayName();
+        }
+
+        public void Quit() 
+        {
+            throw new NotImplementedException();
         }
     }
 }
