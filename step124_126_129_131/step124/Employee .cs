@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace step124
 {
-    class Employee : Person, IQuittable
+    class Employee<T> : Person, IQuittable
     {
         public int id { get; set; }
+        public List<T> things { get; set; }
 
-        public static bool operator !=(Employee x, Employee y)
+        public static bool operator !=(Employee<T> x, Employee<T> y)
         {
             bool diff = x.id != y.id;
             return diff;
         }
-        public static bool operator ==(Employee x, Employee y)
+        public static bool operator ==(Employee<T> x, Employee<T> y)
         
         {
             bool same = x.id == y.id;
