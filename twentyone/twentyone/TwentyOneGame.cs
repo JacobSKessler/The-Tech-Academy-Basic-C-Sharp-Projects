@@ -25,7 +25,15 @@ namespace twentyone
             foreach (Player player in Players)
             {
                 int bet = Convert.ToInt32(Console.ReadLine());
+                bool successfullyBet = player.Bet(bet);
+                if (!successfullyBet)
+                {
+                    return;
+                }
+                Bets[player] = bet;
             }
+
+
         }
         public override void ListPlayers()
         {
