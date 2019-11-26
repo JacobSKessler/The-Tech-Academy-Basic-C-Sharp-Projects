@@ -8,7 +8,7 @@ namespace step115
 {
     class Class1
     {
-        public static int TimesFive(int x, int y = 1)
+        public int TimesFive(int x, int y = 1)
         {
             for (int i = 0; i < y; i++)
             {

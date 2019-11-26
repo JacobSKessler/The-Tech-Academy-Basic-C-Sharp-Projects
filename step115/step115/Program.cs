@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace step115
 {
     class Program
@@ -17,8 +18,11 @@ namespace step115
 
             //checks in second input is an int value and if it is assigns it to input2
             int.TryParse(inputString, out input2);
+            if (input2 == 0) { input2++; }
 
-            int result = Class1.TimesFive(input1, input2);
+            var instance = new Class1();
+
+            int result = instance.TimesFive(input1, input2);
             Console.WriteLine(result);
             Console.ReadLine();
         }
