@@ -10,13 +10,14 @@ namespace step103
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter 5 words one after another");
-            string[] words = new string[4];
-            for (int i = 0; i < 5; i++)
+            Console.WriteLine("enter 4 words one after another");
+            string[] words = new string[4] {"1","2","3","4" };
+            for (int i = 0; i < 4; i++)
             {
-                words[i] = Console.ReadLine();
+                words[i] = words[i] + Console.ReadLine();
             }
-            for (int i = 0; i < 5; i++)
+
+            for (int i = 0; i < 4; i++)
             {
                Console.WriteLine(words[i]);
             }
@@ -38,7 +39,7 @@ namespace step103
                 Console.WriteLine("search for one two or three");
                 string input = Console.ReadLine();
 
-                for (int i; i < strList.Count; i++)
+                for (int i = 0; i < strList.Count; i++)
                 {
                     if (strList[i] == input)
                     {
@@ -61,7 +62,7 @@ namespace step103
                 Console.WriteLine("search for one two or three");
                 string input = Console.ReadLine();
 
-                for (int i; i < strList.Count; i++)
+                for (int i = 0; i < strList.Count; i++)
                 {
                     if (strList[i] == input)
                     {
@@ -77,24 +78,27 @@ namespace step103
             }
 
             List<string> strings = new List<string>();
-            bool dupe = false;
-            strings.Add("hellow world");
-            strings.Add("hellow world");
+            strings.Add("hello world");
+            strings.Add("hello world");
+            List<string> strings2 = new List<string>();
+
+
+
 
             foreach (string str in strings)
             {
-                if (dupe == false)
+                
+
+                if (strings2.Contains(str))
                 {
                     Console.WriteLine(str);
-                    Console.WriteLine("first time on list");
-                    dupe = true;
-
+                    Console.WriteLine("not first time on list");
                 }
                 else
                 {
                     Console.WriteLine(str);
-                    Console.WriteLine("not firtst time on list");
-
+                    Console.WriteLine("first time on list");
+                    strings2.Add(str);
                 }
 
 
