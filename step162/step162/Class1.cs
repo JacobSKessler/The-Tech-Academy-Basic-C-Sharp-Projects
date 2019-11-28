@@ -10,12 +10,12 @@ namespace step162
     {   //when I did the method() : this(stuff) style like used in almost every place I could find including the LMS videos the : was listing as an error I can not figure out why for the life of me
         private int id;
 
-        public void Tag() 
+        public Class1() : this(id:0)
         {
-            Tag(10);
+            
         }
 
-        public void Tag(int id)
+        public Class1(int id)
         {
             this.id = id;
         }

@@ -12,6 +12,7 @@ namespace step162
         {
             const int x = 5;
             var y = "65";
+            Class1 class1 = new Class1();
         }
         //Constructors are in Class1
         
